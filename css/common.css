@@ -1,4 +1,4 @@
-/* #region Base */
+/* #region Base style*/
 * {
   box-sizing: border-box;
 }
@@ -12,96 +12,70 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  background: #fff;
 }
-
-/* #endregion */
-
-/* #region Reset styles */
-/* 
-* {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-} */
-
-/* *,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-} */
-
-/* *:focus {
-  outline: none;
-} */
-
-html,
-body {
-  height: 100%;
-  min-width: 320px;
-}
-/* 
-body {
-  color: #000000;
-  line-height: 1;
-  font-size: 1rem;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
-/* 
-input,
-button,
-textarea {
-  font-size: inherit;
-}
-
-button {
-  cursor: pointer;
-  color: inherit;
-  background-color: inherit;
-} */
-
-/* a {
-  color: inherit;
-  text-decoration: none;
-} */
-
-/* a:link,
-a:visited {
-  text-decoration: none;
-} */
-
-/* a:hover {
-  text-decoration: none;
-} */
 
 ul,
 ol,
 li {
-  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
 }
 
-/* img {
-  vertical-align: top;
-} */
-
-/* h1,
+h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  font-weight: inherit;
-  font-size: inherit;
-  line-height: 1;
-} */
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 /* #endregion */
 
 /* #region Task-1 */
+
+.item {
+  border-radius: 8px;
+  border: none;
+  width: 392px;
+  height: auto;
+  background: #f6f6fe;
+  margin: 24px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 16px 0;
+}
+
+ul {
+}
+
+li {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: auto;
+  margin: 8px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
 
 /* #endregion */
 
@@ -110,9 +84,9 @@ h6 {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 48px 24px;
   list-style: none;
-  padding: 0;
+  padding: 100px 156px;
   margin: 0;
 }
 
@@ -130,22 +104,197 @@ h6 {
 
 /* #region Task-3 */
 
+#name-input {
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-left: 24px;
+}
+
 /* #endregion */
 
 /* #region Task-4 */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 256px;
+}
+
+.login-form input {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+.login-form input:hover {
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+.login-form button[type="submit"] {
+  align-self: start;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: auto;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.login-form button[type="submit"]:hover {
+  background: #6c8cff;
+}
 
 /* #endregion */
 
 /* #region Task-5 */
 
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  padding: 100px 88px;
+  min-width: 359px;
+  height: 280px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.widget p {
+  padding-bottom: 16px;
+}
+
+.widget .change-color {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: auto;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.widget button:hover {
+  background: #6c8cff;
+}
+
 /* #endregion */
 
 /* #region Task-6 */
+#controls {
+  border-radius: 8px;
+  padding: 32px;
+  width: 413px;
+  height: 104px;
+  background: #f6f6fe;
+  margin-bottom: 16px;
+}
+
+#controls input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 36px;
+  width: auto;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #2e2f42;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+#controls button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: auto;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+#controls button[data-create] {
+  background: #4e75ff;
+}
+
+#controls button[data-create]:hover {
+  background: #6c8cff;
+}
+
+#controls button[data-destroy] {
+  background: #ff4e4e;
+}
+
+#controls button[data-destroy]:hover {
+  background: #ff7070;
+}
 
 #boxes {
+  border: none;
   display: flex;
   flex-wrap: wrap;
+
   gap: 10px;
+  border-radius: 8px;
+  padding: 32px;
+  min-width: 413px;
+  height: auto;
+  background: #f6f6fe;
 }
 .box {
   display: inline-block;
